@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_B7F6F3FF_D66A_49e0_90BF_91C92EBC7F47"
       generator-version="1.47.2"
-      generator-date="2018-09-25T10:14:13Z">
+      generator-date="2018-10-09T06:36:49Z">
    <section type="DOMAIN" name="BRO: DGM" id="global_package_BRODGM">
       <section type="IMAGEMAPS"
                name="BRO: DGM-imagemap"
@@ -198,10 +198,6 @@
                   <item>Herkomst definitie</item>
                   <item>TNO</item>
                </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Bij het construeren van een modelgebiedversie wordt op een zeker moment een momentopname (?snapshot?) gemaakt van de boormonsterprofielen en de bijbehorende boorbeschrijvingsintervallen in de DINO-databank. De interpretaties van de boormonsterprofielen worden vervolgens gebaseerd op deze momentopname. Alle wijzigingen die na de momentopname in de DINO-databank worden aangebracht, zullen daarom niet zichtbaar zijn in de betreffende modelgebiedversie. Wel is er een relatie tussen het boormonsterprofiel in de momentopname en het boormonsterprofiel in de DINO-databank (attribuut DINO-identificatie), zodat indien gewenst de momentopname vergeleken kan worden met de actuele situatie in DINO.</item>
-               </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
                <content>
@@ -234,7 +230,7 @@
                      <item>
                         <item type="detail" idref="detail_attribute_BRODGM_Modelgebied_datumIngang">datum ingang</item>
                      </item>
-                     <item>Eerste dag waarop de modelgebiedversie actueel is.</item>
+                     <item>Eerste dag waarop het modelgebied actueel is.</item>
                      <item>
                         <item type="global">Datum</item>
                      </item>
@@ -244,7 +240,7 @@
                      <item>
                         <item type="detail" idref="detail_attribute_BRODGM_Modelgebied_datumEinde">datum einde</item>
                      </item>
-                     <item>Laatste dag waarop de modelgebiedversie actueel is.</item>
+                     <item>Laatste dag waarop het modelgebied actueel is.</item>
                      <item>
                         <item type="global">Datum</item>
                      </item>
@@ -373,7 +369,7 @@
                         <item>Modelgebied</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van de Modelgebied waarvan het Voxel deel uit maakt.</item>
+                     <item>De unieke aanduiding van het Modelgebied waarvan de Laag deel uit maakt.</item>
                   </part>
                </content>
             </section>
@@ -393,11 +389,15 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Een in een modelgebied gebruikt boormonsterprofiel waarbij een interpretatie in geologische eenheden en in lithoklassen is gemaakt.</item>
+                  <item>Een in een modelgebied gebruikt boormonsterprofiel waarbij een interpretatie in geologische eenheden is gemaakt.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
                   <item>TNO</item>
+               </part>
+               <part type="CFG-DOC-TOELICHTING">
+                  <item>Toelichting</item>
+                  <item>Bij het construeren van een modelgebied wordt op een zeker moment een momentopname (snapshot) gemaakt van de boormonsterprofielen en de bijbehorende boorbeschrijvingsintervallen in de bron-databank. De interpretaties van de boormonsterprofielen worden vervolgens gebaseerd op deze momentopname. Alle wijzigingen die na de momentopname in de DINO-databank worden aangebracht, zullen daarom niet zichtbaar zijn in de betreffende modelgebiedversie. </item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -412,7 +412,7 @@
                         <item type="detail"
                               idref="detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_boornummer">boornummer</item>
                      </item>
-                     <item>NITG-nummer van het boormonsterprofiel.</item>
+                     <item>Unieke aanduiding van het boormonsterprofiel.</item>
                      <item>
                         <item type="global">CHARACTERSTRING</item>
                      </item>
@@ -562,7 +562,7 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Boorbeschrijvingsinterval in een in een modelgebiedversie geïnterpreteerd boormonsterprofiel.</item>
+                  <item>Boorbeschrijvingsinterval van een in een modelgebied geïnterpreteerd boormonsterprofiel.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
@@ -592,9 +592,9 @@
                         <item type="detail"
                               idref="detail_attribute_BRODGM_Boorbeschrijvingsinterval_lithologie">lithologie</item>
                      </item>
-                     <item>(hoofd)lithologie</item>
+                     <item>Code die de lithologie van het interval aangeeft.</item>
                      <item>
-                        <item type="global">Integer</item>
+                        <item type="global">CHARACTERSTRING</item>
                      </item>
                      <item>0 .. 1</item>
                   </part>
@@ -767,7 +767,7 @@
                         <item type="detail"
                               idref="detail_attribute_BRODGM_GeNterpreteerdGeologischeEenheidInterval_geologischeEenheid">geologische eenheid</item>
                      </item>
-                     <item>Een geologische eenheid omvat ruimtelijk samenhangende delen van de ondergrond met overeenkomstige lithologische en genetische eigenschappen.</item>
+                     <item>De geologische eenheid waartoe het interval behoort</item>
                      <item>
                         <item type="global" idref="global_class_BRODGM_GeologischeEenheid">Geologische eenheid</item>
                      </item>
@@ -778,7 +778,7 @@
                         <item type="detail"
                               idref="detail_attribute_BRODGM_GeNterpreteerdGeologischeEenheidInterval_indicatieGestuwd">indicatie gestuwd</item>
                      </item>
-                     <item>Aanduiding of gestuwd is.</item>
+                     <item>Indicatie of het interval door landijs gestuwd is.</item>
                      <item>
                         <item type="global" idref="global_class_BRODGM_Indicatie">Indicatie</item>
                      </item>
@@ -789,7 +789,7 @@
                         <item type="detail"
                               idref="detail_attribute_BRODGM_GeNterpreteerdGeologischeEenheidInterval_geulgeneratie">geulgeneratie</item>
                      </item>
-                     <item>Geulgeneratie.</item>
+                     <item>Code die aangeeft of het interval tot een holocene fluviatiele zandbaan behoort, en zo ja van welke generatie c.q. relatieve ouderdom de zandbaan is.</item>
                      <item>
                         <item type="global">CHARACTERSTRING</item>
                      </item>
@@ -862,11 +862,6 @@
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
                   <item>TNO</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Een niet in het gegevensmodel weergegeven relatie is dat een
-voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -987,7 +982,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van de Modelgebied waarvan het Voxel deel uit maakt.</item>
+                     <item>De unieke aanduiding van het Modelgebied waarvan de Laag deel uit maakt.</item>
                   </part>
                </content>
             </section>
@@ -1024,7 +1019,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      <item>
                         <item type="detail" idref="detail_attribute_BRODGM_GeologischeEenheid_code">code</item>
                      </item>
-                     <item>Unieke, identificerende code van de geologische eenheid, bijvoorbeeld ?NAWA?</item>
+                     <item>Unieke, identificerende code van de geologische eenheid.</item>
                      <item>
                         <item type="global">CHARACTERSTRING</item>
                      </item>
@@ -1034,7 +1029,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      <item>
                         <item type="detail" idref="detail_attribute_BRODGM_GeologischeEenheid_naam">naam</item>
                      </item>
-                     <item>Naam van de geologische eenheid, bijvoorbeeld ?Formatie van Naaldwijk, Laagpakket van Walcheren?</item>
+                     <item>Naam van de geologische eenheid.</item>
                      <item>
                         <item type="global">CHARACTERSTRING</item>
                      </item>
@@ -1057,7 +1052,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </item>
                      <item>RGB-waarden van de kleur waarmee de geologische eenheid in visualisaties wordt weergegeven.</item>
                      <item>
-                        <item type="global">CHARACTERSTRING</item>
+                        <item type="global" idref="global_class_BRODGM_Kleur">Kleur</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -1212,6 +1207,64 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                </content>
             </section>
          </section>
+         <section name="Kleur"
+                  type="STRUCTUREDDATATYPE"
+                  id="global_class_BRODGM_Kleur"
+                  uuid="EAID_E1543714_7244_4890_A02C_CE669BBD62B3">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>Kleur</item>
+               </part>
+               <part type="CFG-DOC-HERKOMST">
+                  <item>Herkomst</item>
+                  <item>BRO</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Kleur volgens de kleurcodering van het RGB-kleursysteem, waarbij kleur wordt uitgedrukt met behulp van een combinatie van de drie primaire kleuren Rood-Groen-Blauw, uitgaande van additieve kleurmenging.</item>
+               </part>
+            </content>
+            <section type="SHORT-DATAELEMENTS">
+               <content>
+                  <itemtype/>
+                  <itemtype type="DATAELEMENT-NAME"/>
+                  <itemtype type="DATAELEMENT-DEFINITION"/>
+                  <itemtype type="DATAELEMENT-FORMAT"/>
+                  <itemtype type="DATAELEMENT-CARD"/>
+                  <part>
+                     <item>
+                        <item type="detail" idref="detail_attribute_BRODGM_Kleur_rood">rood</item>
+                     </item>
+                     <item>Hoeveelheid (0 tm 255) van de kleur rood</item>
+                     <item>
+                        <item type="global">Integer</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail" idref="detail_attribute_BRODGM_Kleur_groen">groen</item>
+                     </item>
+                     <item>Hoeveelheid (0 tm 255) van de kleur groen</item>
+                     <item>
+                        <item type="global">Integer</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail" idref="detail_attribute_BRODGM_Kleur_blauw">blauw</item>
+                     </item>
+                     <item>Hoeveelheid (0 tm 255) van de kleur blauw</item>
+                     <item>
+                        <item type="global">Integer</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+               </content>
+            </section>
+         </section>
       </section>
       <section type="OVERVIEW-PRIMITIVEDATATYPE">
          <section name="GM_MultiCurve"
@@ -1313,10 +1366,6 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                         <item>Herkomst definitie</item>
                         <item>TNO</item>
                      </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>De huidige versie heeft als naam "DGM".</item>
-                     </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
                         <item>Nee</item>
@@ -1367,10 +1416,6 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
                         <item>TNO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>De huidige versie heeft als nummer "v2.2".</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1476,7 +1521,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-TOELICHTING">
                         <item>Toelichting</item>
-                        <item>De huidige versie heeft (nog) geen einddatum.</item>
+                        <item>De actuele versie heeft (nog) geen einddatum.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1674,10 +1719,6 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                         <item>Herkomst definitie</item>
                         <item>TNO</item>
                      </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Bijvoorbeeld "Rivierengebied".</item>
-                     </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
                         <item>Nee</item>
@@ -1729,10 +1770,6 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                         <item>Herkomst definitie</item>
                         <item>TNO</item>
                      </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Bijvoorbeeld "v2.2"</item>
-                     </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
                         <item>Nee</item>
@@ -1778,7 +1815,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Eerste dag waarop de modelgebiedversie actueel is.</item>
+                        <item>Eerste dag waarop het modelgebied actueel is.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -1829,11 +1866,15 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Laatste dag waarop de modelgebiedversie actueel is.</item>
+                        <item>Laatste dag waarop het modelgebied actueel is.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
                         <item>TNO</item>
+                     </part>
+                     <part type="CFG-DOC-TOELICHTING">
+                        <item>Toelichting</item>
+                        <item>De actuele versie heeft (nog) geen einddatum.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1987,7 +2028,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>NITG-nummer van het boormonsterprofiel.</item>
+                        <item>Unieke aanduiding van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2289,7 +2330,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>(hoofd)lithologie</item>
+                        <item>Code die de lithologie van het interval aangeeft.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2317,7 +2358,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
-                        <item>Integer</item>
+                        <item>CHARACTERSTRING</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
@@ -2844,7 +2885,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Een geologische eenheid omvat ruimtelijk samenhangende delen van de ondergrond met overeenkomstige lithologische en genetische eigenschappen.</item>
+                        <item>De geologische eenheid waartoe het interval behoort</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2895,7 +2936,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Aanduiding of gestuwd is.</item>
+                        <item>Indicatie of het interval door landijs gestuwd is.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2946,7 +2987,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Geulgeneratie.</item>
+                        <item>Code die aangeeft of het interval tot een holocene fluviatiele zandbaan behoort, en zo ja van welke generatie c.q. relatieve ouderdom de zandbaan is.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -3502,7 +3543,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding van de Modelgebied waarvan het Voxel deel uit maakt.</item>
+                        <item>De unieke aanduiding van het Modelgebied waarvan de Laag deel uit maakt.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -3555,7 +3596,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Unieke, identificerende code van de geologische eenheid, bijvoorbeeld ?NAWA?</item>
+                        <item>Unieke, identificerende code van de geologische eenheid.</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
@@ -3582,7 +3623,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Naam van de geologische eenheid, bijvoorbeeld ?Formatie van Naaldwijk, Laagpakket van Walcheren?</item>
+                        <item>Naam van de geologische eenheid.</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
@@ -3644,7 +3685,7 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
-                        <item>CHARACTERSTRING</item>
+                        <item>Kleur</item>
                      </part>
                   </content>
                </section>
@@ -3825,6 +3866,92 @@ voxel zich binnen de grensvlakken van een modellaag bevindt.</item>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
                         <item>CV_Coverage</item>
+                     </part>
+                  </content>
+               </section>
+            </section>
+            <section name="Kleur"
+                     type="GESTRUCTUREERD DATATYPE"
+                     id="detail_class_BRODGM_Kleur"
+                     id-global="global_class_BRODGM_Kleur">
+               <section name="rood"
+                        type="DETAIL-DATAELEMENT"
+                        id="detail_attribute_BRODGM_Kleur_rood"
+                        id-global="global_attribute_BRODGM_Kleur_rood">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>rood</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>Hoeveelheid (0 tm 255) van de kleur rood</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Integer</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="groen"
+                        type="DETAIL-DATAELEMENT"
+                        id="detail_attribute_BRODGM_Kleur_groen"
+                        id-global="global_attribute_BRODGM_Kleur_groen">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>groen</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>Hoeveelheid (0 tm 255) van de kleur groen</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Integer</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="blauw"
+                        type="DETAIL-DATAELEMENT"
+                        id="detail_attribute_BRODGM_Kleur_blauw"
+                        id-global="global_attribute_BRODGM_Kleur_blauw">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>blauw</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>Hoeveelheid (0 tm 255) van de kleur blauw</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>Integer</item>
                      </part>
                   </content>
                </section>

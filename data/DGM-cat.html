@@ -1,13 +1,14 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "BRO:DGM" door Imvertor 1.47.2 op September 25, 2018 at 10:14:13.
+   "BRO:DGM" door Imvertor 1.47.2 op October 9, 2018 at 06:36:49.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"DGM-BRODGM-0.4-1-20180925-20180925-121415"</i> door. 
+   <i>"DGM-BRODGM-0.4-1-20180925-20181009-083651"</i> door. 
    
 </p>
 <div class="imageinfo overview"><img src="data/Images/EAID_F5C182FD_0FDF_4a8e_8743_45661AAB7289.png" usemap="#imagemap-EAID_F5C182FD_0FDF_4a8e_8743_45661AAB7289"><map name="imagemap-EAID_F5C182FD_0FDF_4a8e_8743_45661AAB7289">
+      <area shape="rect" coords="904,869,1004,767" alt="" href="#graph_EAID_E1543714_7244_4890_A02C_CE669BBD62B3">
       <area shape="rect" coords="429,1048,519,988" alt="" href="#graph_EAID_4F81EB44_6919_4924_824B_D8ABBB75984F">
       <area shape="rect" coords="431,886,587,797" alt="" href="#graph_EAID_A872E101_2289_4f83_8BB5_C6802D6604FA">
       <area shape="rect" coords="201,692,416,514" alt="" href="#graph_EAID_EABACEC5_67CE_4c7d_B6D9_697C45934660">
@@ -194,18 +195,6 @@
                <th>Herkomst definitie</th>
                <td>TNO</td>
             </tr>
-            <tr>
-               <th>Toelichting</th>
-               <td>Bij het construeren van een modelgebiedversie wordt op een zeker moment een momentopname
-                  (?snapshot?) gemaakt van de boormonsterprofielen en de bijbehorende boorbeschrijvingsintervallen
-                  in de DINO-databank. De interpretaties van de boormonsterprofielen worden vervolgens
-                  gebaseerd op deze momentopname. Alle wijzigingen die na de momentopname in de DINO-databank
-                  worden aangebracht, zullen daarom niet zichtbaar zijn in de betreffende modelgebiedversie.
-                  Wel is er een relatie tussen het boormonsterprofiel in de momentopname en het boormonsterprofiel
-                  in de DINO-databank (attribuut DINO-identificatie), zodat indien gewenst de momentopname
-                  vergeleken kan worden met de actuele situatie in DINO.
-               </td>
-            </tr>
          </tbody>
       </table>
       
@@ -252,7 +241,7 @@
                   <a class="link" href="#detail_attribute_BRODGM_Modelgebied_datumIngang">datum ingang</a>
                   
                </td>
-               <td>Eerste dag waarop de modelgebiedversie actueel is.</td>
+               <td>Eerste dag waarop het modelgebied actueel is.</td>
                <td>
                   Datum
                   
@@ -264,7 +253,7 @@
                   <a class="link" href="#detail_attribute_BRODGM_Modelgebied_datumEinde">datum einde</a>
                   
                </td>
-               <td>Laatste dag waarop de modelgebiedversie actueel is.</td>
+               <td>Laatste dag waarop het modelgebied actueel is.</td>
                <td>
                   Datum
                   
@@ -355,7 +344,7 @@
                   [ 1 ]
                   
                </td>
-               <td>De unieke aanduiding van de Modelgebied waarvan het Voxel deel uit maakt.</td>
+               <td>De unieke aanduiding van het Modelgebied waarvan de Laag deel uit maakt.</td>
             </tr>
          </tbody>
       </table>
@@ -380,12 +369,22 @@
             <tr>
                <th>Definitie</th>
                <td>Een in een modelgebied gebruikt boormonsterprofiel waarbij een interpretatie in geologische
-                  eenheden en in lithoklassen is gemaakt.
+                  eenheden is gemaakt.
                </td>
             </tr>
             <tr>
                <th>Herkomst definitie</th>
                <td>TNO</td>
+            </tr>
+            <tr>
+               <th>Toelichting</th>
+               <td>Bij het construeren van een modelgebied wordt op een zeker moment een momentopname
+                  (snapshot) gemaakt van de boormonsterprofielen en de bijbehorende boorbeschrijvingsintervallen
+                  in de bron-databank. De interpretaties van de boormonsterprofielen worden vervolgens
+                  gebaseerd op deze momentopname. Alle wijzigingen die na de momentopname in de DINO-databank
+                  worden aangebracht, zullen daarom niet zichtbaar zijn in de betreffende modelgebiedversie.
+                  
+               </td>
             </tr>
          </tbody>
       </table>
@@ -409,7 +408,7 @@
                   <a class="link" href="#detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_boornummer">boornummer</a>
                   
                </td>
-               <td>NITG-nummer van het boormonsterprofiel.</td>
+               <td>Unieke aanduiding van het boormonsterprofiel.</td>
                <td>
                   CHARACTERSTRING
                   
@@ -528,7 +527,7 @@
             </tr>
             <tr>
                <th>Definitie</th>
-               <td>Boorbeschrijvingsinterval in een in een modelgebiedversie geïnterpreteerd boormonsterprofiel.</td>
+               <td>Boorbeschrijvingsinterval van een in een modelgebied geïnterpreteerd boormonsterprofiel.</td>
             </tr>
             <tr>
                <th>Herkomst definitie</th>
@@ -568,9 +567,9 @@
                   <a class="link" href="#detail_attribute_BRODGM_Boorbeschrijvingsinterval_lithologie">lithologie</a>
                   
                </td>
-               <td>(hoofd)lithologie</td>
+               <td>Code die de lithologie van het interval aangeeft.</td>
                <td>
-                  Integer
+                  CHARACTERSTRING
                   
                </td>
                <td>0 .. 1</td>
@@ -755,9 +754,7 @@
                   <a class="link" href="#detail_attribute_BRODGM_GeNterpreteerdGeologischeEenheidInterval_geologischeEenheid">geologische eenheid</a>
                   
                </td>
-               <td>Een geologische eenheid omvat ruimtelijk samenhangende delen van de ondergrond met
-                  overeenkomstige lithologische en genetische eigenschappen.
-               </td>
+               <td>De geologische eenheid waartoe het interval behoort</td>
                <td>
                   <a class="link" href="#global_class_BRODGM_GeologischeEenheid">Geologische eenheid</a>
                   
@@ -769,7 +766,7 @@
                   <a class="link" href="#detail_attribute_BRODGM_GeNterpreteerdGeologischeEenheidInterval_indicatieGestuwd">indicatie gestuwd</a>
                   
                </td>
-               <td>Aanduiding of gestuwd is.</td>
+               <td>Indicatie of het interval door landijs gestuwd is.</td>
                <td>
                   <a class="link" href="#global_class_BRODGM_Indicatie">Indicatie</a>
                   
@@ -781,7 +778,9 @@
                   <a class="link" href="#detail_attribute_BRODGM_GeNterpreteerdGeologischeEenheidInterval_geulgeneratie">geulgeneratie</a>
                   
                </td>
-               <td>Geulgeneratie.</td>
+               <td>Code die aangeeft of het interval tot een holocene fluviatiele zandbaan behoort, en
+                  zo ja van welke generatie c.q. relatieve ouderdom de zandbaan is.
+               </td>
                <td>
                   CHARACTERSTRING
                   
@@ -849,12 +848,6 @@
             <tr>
                <th>Herkomst definitie</th>
                <td>TNO</td>
-            </tr>
-            <tr>
-               <th>Toelichting</th>
-               <td>Een niet in het gegevensmodel weergegeven relatie is dat een
-                  voxel zich binnen de grensvlakken van een modellaag bevindt.
-               </td>
             </tr>
          </tbody>
       </table>
@@ -987,7 +980,7 @@
                   [ 1 ]
                   
                </td>
-               <td>De unieke aanduiding van de Modelgebied waarvan het Voxel deel uit maakt.</td>
+               <td>De unieke aanduiding van het Modelgebied waarvan de Laag deel uit maakt.</td>
             </tr>
          </tbody>
       </table>
@@ -1042,7 +1035,7 @@
                      <a class="link" href="#detail_attribute_BRODGM_GeologischeEenheid_code">code</a>
                      
                   </td>
-                  <td>Unieke, identificerende code van de geologische eenheid, bijvoorbeeld ?NAWA?</td>
+                  <td>Unieke, identificerende code van de geologische eenheid.</td>
                   <td>
                      CHARACTERSTRING
                      
@@ -1054,9 +1047,7 @@
                      <a class="link" href="#detail_attribute_BRODGM_GeologischeEenheid_naam">naam</a>
                      
                   </td>
-                  <td>Naam van de geologische eenheid, bijvoorbeeld ?Formatie van Naaldwijk, Laagpakket
-                     van Walcheren?
-                  </td>
+                  <td>Naam van de geologische eenheid.</td>
                   <td>
                      CHARACTERSTRING
                      
@@ -1085,7 +1076,7 @@
                   </td>
                   <td>RGB-waarden van de kleur waarmee de geologische eenheid in visualisaties wordt weergegeven.</td>
                   <td>
-                     CHARACTERSTRING
+                     <a class="link" href="#global_class_BRODGM_Kleur">Kleur</a>
                      
                   </td>
                   <td>1</td>
@@ -1303,6 +1294,88 @@
       </section>
       
    </section>
+   <a class="anchor" name="graph_EAID_E1543714_7244_4890_A02C_CE669BBD62B3"></a><a class="anchor" name="global_class_BRODGM_Kleur"></a><section id="global_class_BRODGM_Kleur">
+      <h4>Gestructureerd datatype Kleur</h4>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>Kleur</td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td>BRO</td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>Kleur volgens de kleurcodering van het RGB-kleursysteem, waarbij kleur wordt uitgedrukt
+                  met behulp van een combinatie van de drie primaire kleuren Rood-Groen-Blauw, uitgaande
+                  van additieve kleurmenging.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <section id="">
+         <h5>Overzicht data elementen </h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="50%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <colgroup width="10%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Data element</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_BRODGM_Kleur_rood">rood</a>
+                     
+                  </td>
+                  <td>Hoeveelheid (0 tm 255) van de kleur rood</td>
+                  <td>
+                     Integer
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_BRODGM_Kleur_groen">groen</a>
+                     
+                  </td>
+                  <td>Hoeveelheid (0 tm 255) van de kleur groen</td>
+                  <td>
+                     Integer
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_BRODGM_Kleur_blauw">blauw</a>
+                     
+                  </td>
+                  <td>Hoeveelheid (0 tm 255) van de kleur blauw</td>
+                  <td>
+                     Integer
+                     
+                  </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
    
 </section>
 <section id="">
@@ -1434,10 +1507,6 @@
                   <td>TNO</td>
                </tr>
                <tr>
-                  <th>Toelichting</th>
-                  <td>De huidige versie heeft als naam "DGM".</td>
-               </tr>
-               <tr>
                   <th>Mogelijk geen waarde</th>
                   <td>Nee</td>
                </tr>
@@ -1492,10 +1561,6 @@
                <tr>
                   <th>Herkomst definitie</th>
                   <td>TNO</td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>De huidige versie heeft als nummer "v2.2".</td>
                </tr>
                <tr>
                   <th>Mogelijk geen waarde</th>
@@ -1611,7 +1676,7 @@
                </tr>
                <tr>
                   <th>Toelichting</th>
-                  <td>De huidige versie heeft (nog) geen einddatum.</td>
+                  <td>De actuele versie heeft (nog) geen einddatum.</td>
                </tr>
                <tr>
                   <th>Mogelijk geen waarde</th>
@@ -1782,10 +1847,6 @@
                   <td>TNO</td>
                </tr>
                <tr>
-                  <th>Toelichting</th>
-                  <td>Bijvoorbeeld "Rivierengebied".</td>
-               </tr>
-               <tr>
                   <th>Mogelijk geen waarde</th>
                   <td>Nee</td>
                </tr>
@@ -1842,10 +1903,6 @@
                   <td>TNO</td>
                </tr>
                <tr>
-                  <th>Toelichting</th>
-                  <td>Bijvoorbeeld "v2.2"</td>
-               </tr>
-               <tr>
                   <th>Mogelijk geen waarde</th>
                   <td>Nee</td>
                </tr>
@@ -1895,7 +1952,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>Eerste dag waarop de modelgebiedversie actueel is.</td>
+                  <td>Eerste dag waarop het modelgebied actueel is.</td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
@@ -1951,11 +2008,15 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>Laatste dag waarop de modelgebiedversie actueel is.</td>
+                  <td>Laatste dag waarop het modelgebied actueel is.</td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
                   <td>TNO</td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>De actuele versie heeft (nog) geen einddatum.</td>
                </tr>
                <tr>
                   <th>Mogelijk geen waarde</th>
@@ -2123,7 +2184,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>NITG-nummer van het boormonsterprofiel.</td>
+                  <td>Unieke aanduiding van het boormonsterprofiel.</td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
@@ -2412,7 +2473,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>(hoofd)lithologie</td>
+                  <td>Code die de lithologie van het interval aangeeft.</td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
@@ -2440,7 +2501,7 @@
                </tr>
                <tr>
                   <th>Formaat</th>
-                  <td>Integer</td>
+                  <td>CHARACTERSTRING</td>
                </tr>
                <tr>
                   <th>Indicatie afleidbaar</th>
@@ -2974,9 +3035,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>Een geologische eenheid omvat ruimtelijk samenhangende delen van de ondergrond met
-                     overeenkomstige lithologische en genetische eigenschappen.
-                  </td>
+                  <td>De geologische eenheid waartoe het interval behoort</td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
@@ -3032,7 +3091,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>Aanduiding of gestuwd is.</td>
+                  <td>Indicatie of het interval door landijs gestuwd is.</td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
@@ -3088,7 +3147,9 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>Geulgeneratie.</td>
+                  <td>Code die aangeeft of het interval tot een holocene fluviatiele zandbaan behoort, en
+                     zo ja van welke generatie c.q. relatieve ouderdom de zandbaan is.
+                  </td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
@@ -3601,7 +3662,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>De unieke aanduiding van de Modelgebied waarvan het Voxel deel uit maakt.</td>
+                  <td>De unieke aanduiding van het Modelgebied waarvan de Laag deel uit maakt.</td>
                </tr>
                <tr>
                   <th>Herkomst definitie</th>
@@ -3659,7 +3720,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>Unieke, identificerende code van de geologische eenheid, bijvoorbeeld ?NAWA?</td>
+                  <td>Unieke, identificerende code van de geologische eenheid.</td>
                </tr>
                <tr>
                   <th>Indicatie kardinaliteit</th>
@@ -3691,9 +3752,7 @@
                </tr>
                <tr>
                   <th>Definitie</th>
-                  <td>Naam van de geologische eenheid, bijvoorbeeld ?Formatie van Naaldwijk, Laagpakket
-                     van Walcheren?
-                  </td>
+                  <td>Naam van de geologische eenheid.</td>
                </tr>
                <tr>
                   <th>Indicatie kardinaliteit</th>
@@ -3768,7 +3827,7 @@
                </tr>
                <tr>
                   <th>Formaat</th>
-                  <td>CHARACTERSTRING</td>
+                  <td>Kleur</td>
                </tr>
             </tbody>
          </table>
@@ -3978,6 +4037,106 @@
                <tr>
                   <th>Formaat</th>
                   <td>CV_Coverage</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   <a class="anchor" name="detail_class_BRODGM_Kleur"></a><section id="detail_class_BRODGM_Kleur">
+      <h5>Gestructureerd datatype Kleur</h5>
+      <a class="anchor" name="detail_attribute_BRODGM_Kleur_rood"></a><section id="detail_attribute_BRODGM_Kleur_rood">
+         <h6>Data element details <a href="#global_class_BRODGM_Kleur">Kleur</a> rood
+         </h6>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>rood</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Hoeveelheid (0 tm 255) van de kleur rood</td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Integer</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      <a class="anchor" name="detail_attribute_BRODGM_Kleur_groen"></a><section id="detail_attribute_BRODGM_Kleur_groen">
+         <h6>Data element details <a href="#global_class_BRODGM_Kleur">Kleur</a> groen
+         </h6>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>groen</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Hoeveelheid (0 tm 255) van de kleur groen</td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Integer</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      <a class="anchor" name="detail_attribute_BRODGM_Kleur_blauw"></a><section id="detail_attribute_BRODGM_Kleur_blauw">
+         <h6>Data element details <a href="#global_class_BRODGM_Kleur">Kleur</a> blauw
+         </h6>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>blauw</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td>BRO</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Hoeveelheid (0 tm 255) van de kleur blauw</td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Integer</td>
                </tr>
             </tbody>
          </table>
