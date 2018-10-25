@@ -8,7 +8,10 @@ DGM (Digitaal Geologisch Model) is een registratieobject in het domein
 *modellen*. Het gaat in dit domein om schematische weergaven van de
 werkelijkheid in twee of drie dimensies. Deze schematische weergaven geven een
 schatting of voorspelling van de opbouw en eigenschappen van de bodem of
-ondergrond.
+ondergrond. Modellen zijn sterk afhankelijk van de hoeveelheid en kwaliteit van
+de beschikbare ondergrondgegevens zoals boormonsterbeschrijvingen. De kwaliteit
+van de modellen zal daarom toenemen naarmate er meer ondergrondgegevens in de
+BRO beschikbaar komen.
 
 DGM is een driedimensionaal geologisch model van de laagopbouw van de matig
 diepe ondergrond van Nederland tot een gemiddelde diepte van ongeveer 500 m
@@ -31,27 +34,28 @@ hieronder toegelicht:
     tegenovergestelde situatie, waar een lithostratigrafische eenheid wordt
     gesplitst in een of meerdere geologische eenheden komt ook voor.
 
-DGM bestaat uit de volgende beschreven producten die ontstaan uit een
+DGM bestaat uit de volgende in de BRO opgenomen producten die ontstaan uit een
 gestandaardiseerd werkproces:
 
 -   De interpretaties van de geselecteerde boormonsterbeschrijvingen in
-    **geologische eenheden**. Elk boormonsterbeschrijving wordt onderverdeeld in
+    **geologische eenheden**. Elke boormonsterbeschrijving is onderverdeeld in
     dieptetrajecten behorende bij een geologische eenheid.
 
 -   **Breuken**. Per breuksegment is aangegeven in welke basis van een
     geologische eenheid dit breuksegment nog invloed heeft.
 
--   Een **lagenmodel** waarbij de ondergrond wordt weergegeven als een stapeling
-    van geologische eenheden die begrensd worden door een top- en een basisvlak.
-    Beide vlakken worden weergegeven als een **raster** met cellen van 100 x 100
+-   Een **lagenmodel** waarbij de ondergrond is weergegeven als een stapeling
+    van geologische eenheden die begrensd zijn door een top- en een basisvlak.
+    Beide vlakken zijn weergegeven als een **raster** met cellen van 100 x 100
     meter, waarbij elke **rastercel** de hoogteligging van top en basis in meter
     ten opzichte van NAP geeft en daarvan afgeleid de dikte in meters. Zowel
     voor de top, dikte als basis zijn rasters beschikbaar die de
     modelonzekerheid van het lagenmodel representeren. Ook is er een kans op
     voorkomen per geologische eenheid beschikbaar.
 
-De onderlinge samenhang van geïnterpreteerde boormonsterbeschrijvingen en het
-lagenmodel is geïllustreerd in Figuur 3.1 – 3.2.
+De onderlinge samenhang van de in de BRO opgenomen geïnterpreteerde
+boormonsterbeschrijvingen en het lagenmodel is geïllustreerd in Figuur 3.1 –
+3.2.
 
 ![](media/660b4206181351eb6e1311b594b390ef.png)
 
@@ -108,8 +112,15 @@ plaats van *onzekerheid*.
 
 Van elke gemodelleerde geologische eenheid van het lagenmodel is van zowel de
 top, basis als de dikte een standaarddeviatieraster berekend. Deze rasters geven
-de modelonzekerheid weer van de hoogteligging en dikte van de gemodelleerde
-geologische eenheid.
+voor elke rastercel de modelonzekerheid weer, uitgedrukt in de standaarddeviatie
+(in m) van de door het model geschatte, meest waarschijnlijke diepteligging van
+de gemodelleerde top en basis van de geologische eenheid en de daaruit afgeleide
+dikte. Met de standaarddeviatie is het mogelijk om de kans te bepalen dat de
+dikte of de diepteligging van de top of basis een bepaalde afwijking vertoont
+van de door het model geschatte, meest waarschijnlijke waarde. De manier waarop
+de standaarddeviatie berekend wordt kan per geologische eenheid verschillen.
+Welke manier van toepassing is wordt beschreven in het Totstandkomingsrapport
+dat met het model in de BRO is opgenomen.
 
 ### Kans op voorkomen geologische eenheid
 
