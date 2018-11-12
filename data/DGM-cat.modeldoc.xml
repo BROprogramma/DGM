@@ -3,19 +3,19 @@
       subpath="DGM/BRO:DGM/20180925"
       type="BASISMODEL"
       id="EAPK_B7F6F3FF_D66A_49e0_90BF_91C92EBC7F47"
-      generator-version="1.47.3"
-      generator-date="2018-10-15T05:32:50Z">
+      generator-version="1.47.6"
+      generator-date="2018-11-12T11:46:55Z">
    <section type="DOMAIN" name="BRO: DGM" id="global_package_BRODGM">
       <section type="IMAGEMAPS"
                name="BRO: DGM-imagemap"
                id="imagemap_package_BRODGM">
          <section type="IMAGEMAP"
-                  name="Geïnterpreteerde boormonsterbeschrijvingen met beschrijvings- en interpretatie-intervallen - overzicht"
+                  name="Geïnterpreteerde boormonsterprofielen met beschrijvings- en interpretatie-intervallen - overzicht"
                   id="EAID_F5C182FD_0FDF_4a8e_8743_45661AAB7289">
             <content>
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
-                  <item>Geïnterpreteerde boormonsterbeschrijvingen met beschrijvings- en interpretatie-intervallen - overzicht</item>
+                  <item>Geïnterpreteerde boormonsterprofielen met beschrijvings- en interpretatie-intervallen - overzicht</item>
                </part>
                <part type="CFG-DOC-DESCRIPTION">
                   <item>Omschrijving</item>
@@ -142,6 +142,16 @@
                   <part>
                      <item>
                         <item>Model</item>
+                        <item>is specialisatie van</item>
+                        <item>
+                           <item type="global" idref="global_class_BROCommon_Registratieobject">Registratieobject</item>
+                        </item>
+                     </item>
+                     <item>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond is opgenomen.</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item>Model</item>
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
@@ -159,6 +169,16 @@
                   <itemtype/>
                   <itemtype type="ROLE-NAME"/>
                   <itemtype type="ROLE-DEFINITION"/>
+                  <part>
+                     <item>
+                        <item>Model</item>
+                        <item>is specialisatie van</item>
+                        <item>
+                           <item type="global" idref="global_class_BROCommon_Registratieobject">Registratieobject</item>
+                        </item>
+                     </item>
+                     <item>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond is opgenomen.</item>
+                  </part>
                   <part>
                      <item>
                         <item>Model</item>
@@ -196,7 +216,7 @@
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
-                  <item>BRO</item>
+                  <item>TNO</item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -293,17 +313,17 @@
                      <item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdBoormonsterprofiel_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
                         </item>
                         <item>Modelgebied</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Éen Geïnterpreteerde boormonsterbeschrijving behoort tot één Modelgebied.</item>
+                     <item>Éen geïnterpreteerd boormonsterprofiel behoort tot één Modelgebied.</item>
                   </part>
                   <part>
                      <item>
@@ -344,17 +364,17 @@
                      <item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdBoormonsterprofiel_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
                         </item>
                         <item>Modelgebied</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van het Modelgebied waartoe het Geïnterpreteerde boormonsterbeschrijving behoort.</item>
+                     <item>De unieke aanduiding van het Modelgebied waartoe het Geïnterpreteerd boormonsterprofiel behoort.</item>
                   </part>
                   <part>
                      <item>
@@ -374,14 +394,14 @@
                </content>
             </section>
          </section>
-         <section name="Geïnterpreteerde boormonsterbeschrijving"
+         <section name="Geïnterpreteerd boormonsterprofiel"
                   type="OBJECTTYPE"
-                  id="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving"
+                  id="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel"
                   uuid="EAID_60D3E745_BE53_4980_9810_351C8ED7ABB1">
             <content>
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
-                  <item>Geïnterpreteerde boormonsterbeschrijving</item>
+                  <item>Geïnterpreteerd boormonsterprofiel</item>
                </part>
                <part type="CFG-DOC-HERKOMST">
                   <item>Herkomst</item>
@@ -389,15 +409,15 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Een in een modelgebied gebruikt boormonsterbeschrijving waarbij een interpretatie in geologische eenheden is gemaakt.</item>
+                  <item>Een in een modelgebied gebruikt boormonsterprofiel waarbij een interpretatie in geologische eenheden is gemaakt.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
-                  <item>BRO</item>
+                  <item>TNO</item>
                </part>
                <part type="CFG-DOC-TOELICHTING">
                   <item>Toelichting</item>
-                  <item>Bij het construeren van een modelgebied wordt op een zeker moment een momentopname (snapshot) gemaakt van de boormonsterbeschrijvingen en de bijbehorende boorbeschrijvingsintervallen in de bron-databank. De interpretaties van de boormonsterbeschrijvingen worden vervolgens gebaseerd op deze momentopname. Alle wijzigingen die na de momentopname in de bron-databank worden aangebracht, zullen daarom niet zichtbaar zijn in de betreffende modelgebiedversie. </item>
+                  <item>Bij het construeren van een modelgebied wordt op een zeker moment een momentopname (snapshot) gemaakt van de boormonsterprofielen en de bijbehorende boorbeschrijvingsintervallen in de bron-databank. De interpretaties van de boormonsterprofielen worden vervolgens gebaseerd op deze momentopname. Alle wijzigingen die na de momentopname in de bron-databank worden aangebracht, zullen daarom niet zichtbaar zijn in de betreffende modelgebiedversie. </item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -410,9 +430,9 @@
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_boornummer">boornummer</item>
+                              idref="detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_boornummer">boornummer</item>
                      </item>
-                     <item>Unieke aanduiding van het boormonsterbeschrijving.</item>
+                     <item>Unieke aanduiding van het boormonsterprofiel.</item>
                      <item>
                         <item type="global">CHARACTERSTRING</item>
                      </item>
@@ -421,9 +441,9 @@
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_geometrie">geometrie</item>
+                              idref="detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_geometrie">geometrie</item>
                      </item>
-                     <item>Puntgeometrie met de ligging en hoogte van het boormonsterbeschrijving.</item>
+                     <item>Puntgeometrie met de ligging en hoogte van het boormonsterprofiel.</item>
                      <item>
                         <item type="global" idref="global_class_BRODGM_GM_Point">GM_Point</item>
                      </item>
@@ -432,9 +452,9 @@
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_einddiepte">einddiepte</item>
+                              idref="detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_einddiepte">einddiepte</item>
                      </item>
-                     <item>Diepte waartoe geboord is in mm gerekend vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                     <item>Diepte waartoe geboord is in mm gerekend vanaf de bovenkant van het boormonsterprofiel.</item>
                      <item>
                         <item type="global">Integer</item>
                      </item>
@@ -449,18 +469,18 @@
                   <itemtype type="ASSOCIATION-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Geïnterpreteerde boormonsterbeschrijving</item>
+                        <item>Geïnterpreteerd boormonsterprofiel</item>
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdBoormonsterprofiel_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_BRODGM_Modelgebied">Modelgebied</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Éen Geïnterpreteerde boormonsterbeschrijving behoort tot één Modelgebied.</item>
+                     <item>Éen geïnterpreteerd boormonsterprofiel behoort tot één Modelgebied.</item>
                   </part>
                   <part>
                      <item>
@@ -470,12 +490,12 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeboormonsterbeschrijving">maakt deel uit van: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeBoormonsterprofiel">maakt deel uit van: gerelateerdeBoormonsterprofiel</item>
                         </item>
-                        <item>Geïnterpreteerde boormonsterbeschrijving</item>
+                        <item>Geïnterpreteerd boormonsterprofiel</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Één Boorbeschrijvingsinterval maakt deelt uit van één Geïnterpreteerde boormonsterbeschrijving.</item>
+                     <item>Één Boorbeschrijvingsinterval maakt deelt uit van één Geïnterpreteerd boormonsterprofiel.</item>
                   </part>
                   <part>
                      <item>
@@ -486,12 +506,12 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeboormonsterbeschrijving">behoort tot: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeBoormonsterprofiel">behoort tot: gerelateerdeBoormonsterprofiel</item>
                         </item>
-                        <item>Geïnterpreteerde boormonsterbeschrijving</item>
+                        <item>Geïnterpreteerd boormonsterprofiel</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Één Geïnterpreteerde geologische eenheid-interval behoort tot één Geïnterpreteerde boormonsterbeschrijving.</item>
+                     <item>Één Geïnterpreteerde geologische eenheid-interval behoort tot één Geïnterpreteerd boormonsterprofiel.</item>
                   </part>
                </content>
                <content approach="target">
@@ -500,18 +520,18 @@
                   <itemtype type="ROLE-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Geïnterpreteerde boormonsterbeschrijving</item>
+                        <item>Geïnterpreteerd boormonsterprofiel</item>
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdBoormonsterprofiel_gerelateerdeModelgebied">behoort tot: gerelateerdeModelgebied</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_BRODGM_Modelgebied">Modelgebied</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van het Modelgebied waartoe het Geïnterpreteerde boormonsterbeschrijving behoort.</item>
+                     <item>De unieke aanduiding van het Modelgebied waartoe het Geïnterpreteerd boormonsterprofiel behoort.</item>
                   </part>
                   <part>
                      <item>
@@ -521,12 +541,12 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeboormonsterbeschrijving">maakt deel uit van: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeBoormonsterprofiel">maakt deel uit van: gerelateerdeBoormonsterprofiel</item>
                         </item>
-                        <item>Geïnterpreteerde boormonsterbeschrijving</item>
+                        <item>Geïnterpreteerd boormonsterprofiel</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van het Geïnterpreteerde boormonsterbeschrijving waarvan het Boorbeschrijvingsinterval deel uit maakt.</item>
+                     <item>De unieke aanduiding van het Geïnterpreteerde boormonsterprofiel waarvan het Boorbeschrijvingsinterval deel uit maakt.</item>
                   </part>
                   <part>
                      <item>
@@ -537,12 +557,12 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeboormonsterbeschrijving">behoort tot: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeBoormonsterprofiel">behoort tot: gerelateerdeBoormonsterprofiel</item>
                         </item>
-                        <item>Geïnterpreteerde boormonsterbeschrijving</item>
+                        <item>Geïnterpreteerd boormonsterprofiel</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van het Geïnterpreteerde boormonsterbeschrijving waartoe het Geïnterpreteerd geologische eenheid-interval behoort.</item>
+                     <item>De unieke aanduiding van het Geïnterpreteerd boormonsterprofiel waartoe het Geïnterpreteerd geologische eenheid-interval behoort.</item>
                   </part>
                </content>
             </section>
@@ -562,11 +582,11 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Boorbeschrijvingsinterval van een in een modelgebied Geïnterpreteerde boormonsterbeschrijving.</item>
+                  <item>Boorbeschrijvingsinterval van een in een modelgebied geïnterpreteerd boormonsterprofiel.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
-                  <item>BRO</item>
+                  <item>TNO</item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -581,7 +601,7 @@
                         <item type="detail"
                               idref="detail_attribute_BRODGM_Boorbeschrijvingsinterval_interval">interval</item>
                      </item>
-                     <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                     <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      <item>
                         <item type="global" idref="global_class_BRODGM_Interval">Interval</item>
                      </item>
@@ -688,15 +708,15 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeboormonsterbeschrijving">maakt deel uit van: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeBoormonsterprofiel">maakt deel uit van: gerelateerdeBoormonsterprofiel</item>
                         </item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Één Boorbeschrijvingsinterval maakt deelt uit van één Geïnterpreteerde boormonsterbeschrijving.</item>
+                     <item>Één Boorbeschrijvingsinterval maakt deelt uit van één Geïnterpreteerd boormonsterprofiel.</item>
                   </part>
                </content>
                <content approach="target">
@@ -709,15 +729,15 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeboormonsterbeschrijving">maakt deel uit van: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeBoormonsterprofiel">maakt deel uit van: gerelateerdeBoormonsterprofiel</item>
                         </item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van het Geïnterpreteerde boormonsterbeschrijving waarvan het Boorbeschrijvingsinterval deel uit maakt.</item>
+                     <item>De unieke aanduiding van het Geïnterpreteerde boormonsterprofiel waarvan het Boorbeschrijvingsinterval deel uit maakt.</item>
                   </part>
                </content>
             </section>
@@ -737,11 +757,11 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Interpretatie van een in DGM gebruikt boormonsterbeschrijving als opeenvolging van boorbeschrijvingsintervallen van gelijke geologische eenheid.</item>
+                  <item>Interpretatie van een in DGM gebruikt boormonsterprofiel als opeenvolging van boorbeschrijvingsintervallen van gelijke geologische eenheid.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
-                  <item>BRO</item>
+                  <item>TNO</item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -756,7 +776,7 @@
                         <item type="detail"
                               idref="detail_attribute_BRODGM_GeNterpreteerdGeologischeEenheidInterval_interval">interval</item>
                      </item>
-                     <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                     <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      <item>
                         <item type="global" idref="global_class_BRODGM_Interval">Interval</item>
                      </item>
@@ -808,15 +828,15 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeboormonsterbeschrijving">behoort tot: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeBoormonsterprofiel">behoort tot: gerelateerdeBoormonsterprofiel</item>
                         </item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Één Geïnterpreteerde geologische eenheid-interval behoort tot één Geïnterpreteerde boormonsterbeschrijving.</item>
+                     <item>Één Geïnterpreteerde geologische eenheid-interval behoort tot één Geïnterpreteerd boormonsterprofiel.</item>
                   </part>
                </content>
                <content approach="target">
@@ -829,15 +849,15 @@
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeboormonsterbeschrijving">behoort tot: gerelateerdeboormonsterbeschrijving</item>
+                                 idref="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeBoormonsterprofiel">behoort tot: gerelateerdeBoormonsterprofiel</item>
                         </item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van het Geïnterpreteerde boormonsterbeschrijving waartoe het Geïnterpreteerd geologische eenheid-interval behoort.</item>
+                     <item>De unieke aanduiding van het Geïnterpreteerd boormonsterprofiel waartoe het Geïnterpreteerd geologische eenheid-interval behoort.</item>
                   </part>
                </content>
             </section>
@@ -861,7 +881,7 @@
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
-                  <item>BRO</item>
+                  <item>TNO</item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -1077,7 +1097,7 @@
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                  <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                </part>
             </content>
             <section type="SHORT-DATAELEMENTS">
@@ -1091,7 +1111,7 @@
                      <item>
                         <item type="detail" idref="detail_attribute_BRODGM_Interval_top">top</item>
                      </item>
-                     <item>Top van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                     <item>Top van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      <item>
                         <item type="global">Integer</item>
                      </item>
@@ -1101,7 +1121,7 @@
                      <item>
                         <item type="detail" idref="detail_attribute_BRODGM_Interval_basis">basis</item>
                      </item>
-                     <item>Basis van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                     <item>Basis van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      <item>
                         <item type="global">Integer</item>
                      </item>
@@ -1364,7 +1384,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1415,7 +1435,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1466,7 +1486,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1517,7 +1537,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-TOELICHTING">
                         <item>Toelichting</item>
@@ -1572,7 +1592,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1623,7 +1643,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1667,7 +1687,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1717,7 +1737,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1768,7 +1788,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1819,7 +1839,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1870,7 +1890,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-TOELICHTING">
                         <item>Toelichting</item>
@@ -1925,7 +1945,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -1976,7 +1996,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2009,14 +2029,14 @@
                   </content>
                </section>
             </section>
-            <section name="Geïnterpreteerde boormonsterbeschrijving"
+            <section name="Geïnterpreteerd boormonsterprofiel"
                      type="OBJECTTYPE"
-                     id="detail_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving"
-                     id-global="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">
+                     id="detail_class_BRODGM_GeNterpreteerdBoormonsterprofiel"
+                     id-global="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">
                <section name="boornummer"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_boornummer"
-                        id-global="global_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_boornummer">
+                        id="detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_boornummer"
+                        id-global="global_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_boornummer">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2028,7 +2048,7 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Unieke aanduiding van het boormonsterbeschrijving.</item>
+                        <item>Unieke aanduiding van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2066,8 +2086,8 @@
                </section>
                <section name="geometrie"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_geometrie"
-                        id-global="global_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_geometrie">
+                        id="detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_geometrie"
+                        id-global="global_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_geometrie">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2079,7 +2099,7 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Puntgeometrie met de ligging en hoogte van het boormonsterbeschrijving.</item>
+                        <item>Puntgeometrie met de ligging en hoogte van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2087,7 +2107,7 @@
                      </part>
                      <part type="CFG-DOC-TOELICHTING">
                         <item>Toelichting</item>
-                        <item>Driedimensionale puntgeometrie, waarbij X-coördinaat en Y-coördinaat in het Rijksdriehoekstelsel van de ligging van het boormonsterbeschrijving en hoogte van het maaiveld c.q. de waterbodem ter plaatse van het boormonsterbeschrijving in mm ten opzichte va</item>
+                        <item>Driedimensionale puntgeometrie, waarbij X-coördinaat en Y-coördinaat in het Rijksdriehoekstelsel van de ligging van het boormonsterprofiel en hoogte van het maaiveld c.q. de waterbodem ter plaatse van het boormonsterprofiel in mm ten opzichte van NAP.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2121,8 +2141,8 @@
                </section>
                <section name="einddiepte"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_einddiepte"
-                        id-global="global_attribute_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_einddiepte">
+                        id="detail_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_einddiepte"
+                        id-global="global_attribute_BRODGM_GeNterpreteerdBoormonsterprofiel_einddiepte">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2134,7 +2154,7 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Diepte waartoe geboord is in mm gerekend vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                        <item>Diepte waartoe geboord is in mm gerekend vanaf de bovenkant van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2172,8 +2192,8 @@
                </section>
                <section name="behoort tot"
                         type="DETAIL-ASSOCIATION"
-                        id="detail_association_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_gerelateerdeModelgebied"
-                        id-global="global_association_BRODGM_GeNterpreteerdeBoormonsterbeschrijving_gerelateerdeModelgebied">
+                        id="detail_association_BRODGM_GeNterpreteerdBoormonsterprofiel_gerelateerdeModelgebied"
+                        id-global="global_association_BRODGM_GeNterpreteerdBoormonsterprofiel_gerelateerdeModelgebied">
                   <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2185,11 +2205,11 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Éen Geïnterpreteerde boormonsterbeschrijving behoort tot één Modelgebied.</item>
+                        <item>Éen geïnterpreteerd boormonsterprofiel behoort tot één Modelgebied.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2229,11 +2249,11 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding van het Modelgebied waartoe het Geïnterpreteerde boormonsterbeschrijving behoort.</item>
+                        <item>De unieke aanduiding van het Modelgebied waartoe het Geïnterpreteerd boormonsterprofiel behoort.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2279,7 +2299,7 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                        <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2436,7 +2456,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2725,8 +2745,8 @@
                </section>
                <section name="maakt deel uit van"
                         type="DETAIL-ASSOCIATION"
-                        id="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeboormonsterbeschrijving"
-                        id-global="global_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeboormonsterbeschrijving">
+                        id="detail_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeBoormonsterprofiel"
+                        id-global="global_association_BRODGM_Boorbeschrijvingsinterval_gerelateerdeBoormonsterprofiel">
                   <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -2738,11 +2758,11 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Één Boorbeschrijvingsinterval maakt deelt uit van één Geïnterpreteerde boormonsterbeschrijving.</item>
+                        <item>Één Boorbeschrijvingsinterval maakt deelt uit van één Geïnterpreteerd boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2768,7 +2788,7 @@
                         <item>Gerelateerd objecttype</item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                      </part>
                   </content>
@@ -2783,11 +2803,11 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding van het Geïnterpreteerde boormonsterbeschrijving waarvan het Boorbeschrijvingsinterval deel uit maakt.</item>
+                        <item>De unieke aanduiding van het Geïnterpreteerde boormonsterprofiel waarvan het Boorbeschrijvingsinterval deel uit maakt.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2809,7 +2829,7 @@
                         <item>Gerelateerd objecttype</item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                      </part>
                   </content>
@@ -2834,11 +2854,11 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                        <item>Top en basis van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2889,7 +2909,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2940,7 +2960,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2991,7 +3011,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3025,8 +3045,8 @@
                </section>
                <section name="behoort tot"
                         type="DETAIL-ASSOCIATION"
-                        id="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeboormonsterbeschrijving"
-                        id-global="global_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeboormonsterbeschrijving">
+                        id="detail_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeBoormonsterprofiel"
+                        id-global="global_association_BRODGM_GeNterpreteerdGeologischeEenheidInterval_gerelateerdeBoormonsterprofiel">
                   <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -3038,11 +3058,11 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Één Geïnterpreteerde geologische eenheid-interval behoort tot één Geïnterpreteerde boormonsterbeschrijving.</item>
+                        <item>Één Geïnterpreteerde geologische eenheid-interval behoort tot één Geïnterpreteerd boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-TOELICHTING">
                         <item>Toelichting</item>
@@ -3072,7 +3092,7 @@
                         <item>Gerelateerd objecttype</item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                      </part>
                   </content>
@@ -3087,11 +3107,11 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding van het Geïnterpreteerde boormonsterbeschrijving waartoe het Geïnterpreteerd geologische eenheid-interval behoort.</item>
+                        <item>De unieke aanduiding van het Geïnterpreteerd boormonsterprofiel waartoe het Geïnterpreteerd geologische eenheid-interval behoort.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3113,7 +3133,7 @@
                         <item>Gerelateerd objecttype</item>
                         <item>
                            <item type="global"
-                                 idref="global_class_BRODGM_GeNterpreteerdeBoormonsterbeschrijving">Geïnterpreteerde boormonsterbeschrijving</item>
+                                 idref="global_class_BRODGM_GeNterpreteerdBoormonsterprofiel">Geïnterpreteerd boormonsterprofiel</item>
                         </item>
                      </part>
                   </content>
@@ -3142,7 +3162,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3193,7 +3213,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3244,7 +3264,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3295,7 +3315,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3350,7 +3370,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3401,7 +3421,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3452,7 +3472,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3503,7 +3523,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3547,7 +3567,7 @@
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
-                        <item>BRO</item>
+                        <item>TNO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3712,7 +3732,7 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Top van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                        <item>Top van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
@@ -3739,7 +3759,7 @@
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Basis van het interval in mm vanaf de bovenkant van het boormonsterbeschrijving.</item>
+                        <item>Basis van het interval in mm vanaf de bovenkant van het boormonsterprofiel.</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
