@@ -1,6 +1,7 @@
 var respecConfig = {
   specStatus: "GN-DEF",
   specType: "IM",
+  subtitle: "BRO gegevenscatalogus",
    publishDate: "2020-03-31", 
   logos: [
   {src: 'logo_bro.png',
@@ -25,7 +26,7 @@ var respecConfig = {
 	  note: "088 – 8664 999",
       companyURL: "http://www.tno.nl",
     }],
-  shortName: "bro-DGM",
+  shortName: "DGM",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/DGM",
   //previousPublishDate: "2017-01-01",
