@@ -2,7 +2,7 @@ var respecConfig = {
   specStatus: "GN-DEF",
   specType: "IM",
    subtitle: "BRO gegevenscatalogus",
-   publishDate: "2020-03-31", 
+   publishDate: "2019-05-07", 
   logos: [
   {src: 'logo_bro.png',
     href: "http://basisregistratieondergrond.nl",
