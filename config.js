@@ -1,18 +1,17 @@
 var respecConfig = {
   specStatus: "GN-DEF",
   specType: "IM",
-   /*subtitle: "BRO gegevenscatalogus",*/
    maxTocLevel: 4,
    publishDate: "2019-05-07", 
   logos: [
-  {src: 'logo_bro.png',
+  {src: 'https://docs.geostandaarden.nl/bro/gen/logo_bro.png',
     href: "http://basisregistratieondergrond.nl",
     alt: "Basisregistratie Ondergrond",
     width: 252,
     height: 130,
     id: 'BRO'},
   {
-    src: 'logo_minbzk.png',
+    src: 'https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png',
     href: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
     alt: "Ministerie BZK",
     width: 229,
