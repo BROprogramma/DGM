@@ -1,7 +1,8 @@
 var respecConfig = {
   specStatus: "GN-DEF",
   specType: "IM",
-   subtitle: "BRO gegevenscatalogus",
+   /*subtitle: "BRO gegevenscatalogus",*/
+   maxTocLevel: 4,
    publishDate: "2019-05-07", 
   logos: [
   {src: 'logo_bro.png',
@@ -18,14 +19,18 @@ var respecConfig = {
     height: 130,
     id: 'BZK',
   }]  ,
-  editors: [],
+  editors: [    {
+      name: "Geonovum",
+	  /* mailto: "support@broservicedesk.nl", */
+      companyURL: "https://www.geonovum.nl/geo-standaarden/bro-basisregistratie-ondergrond",
+    }],
   authors: [
     {
-      name: "TNO Geologische Dienst Nederland",
-	  mailto: "support@broservicedesk.nl",
-	  note: "088 – 8664 999",
-      companyURL: "http://www.tno.nl",
-    }],
+      name: "Geonovum",
+	  /* mailto: "support@broservicedesk.nl", */
+      companyURL: "https://www.geonovum.nl/geo-standaarden/bro-basisregistratie-ondergrond",
+    }
+	],
   shortName: "DGM",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/DGM",
